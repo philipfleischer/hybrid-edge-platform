@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1800" height="1980" viewBox="0 0 1800 1980">
+<defs><marker id="a333333" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#333333"/></marker><marker id="a4a6fa5" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4a6fa5"/></marker><marker id="a82b366" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#82b366"/></marker><marker id="a999999" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#999999"/></marker><marker id="ab85450" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#b85450"/></marker><marker id="s333333" viewBox="0 0 12 12" refX="1" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M12,0 L0,6 L12,12 z" fill="#333333"/></marker><marker id="s4a6fa5" viewBox="0 0 12 12" refX="1" refY="6" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M12,0 L0,6 L12,12 z" fill="#4a6fa5"/></marker></defs>
+<rect width="1800" height="1980" fill="#ffffff"/>
+<text x="40" y="60" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#111111" text-anchor="start" font-weight="bold">hybrid-edge-platform: architecture at a glance</text>
+<text x="40" y="102" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#555555" text-anchor="start">An Azure hub and an edge site that must keep working when the link between them is slow or cut.</text>
+<text x="40" y="127.0" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#555555" text-anchor="start">Everything is built from code, every service has its own short-lived identity, and the numbers follow the main flows.</text>
+<rect x="40" y="160" width="1720" height="210" rx="16" fill="#f5f5f5" stroke="#666666" stroke-width="2"/>
+<text x="64" y="210" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#333333" text-anchor="start" font-weight="bold">DELIVERY</text>
+<text x="64" y="237.0" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#333333" text-anchor="start" font-weight="bold">Code and pipelines</text>
+<text x="64" y="258.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#555555" text-anchor="start">GitHub</text>
+<text x="64" y="270.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#333333" text-anchor="start"></text>
+<text x="64" y="289.0" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">Nothing is clicked together</text>
+<text x="64" y="310.25" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">in the portal. Every change</text>
+<text x="64" y="331.5" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">is a pull request.</text>
+<rect x="400" y="205" width="280" height="130" rx="16" fill="#ffffff" stroke="#666666" stroke-width="1.5"/>
+<text x="540.0" y="257.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Operator</text>
+<text x="540.0" y="277.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Signs in with Entra ID and MFA.</text>
+<text x="540.0" y="297.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Admin roles only through PIM.</text>
+<rect x="740" y="205" width="320" height="130" rx="16" fill="#ffffff" stroke="#666666" stroke-width="1.5"/>
+<text x="900.0" y="247.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">GitHub Actions</text>
+<text x="900.0" y="267.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Plans, scans and applies on merge.</text>
+<text x="900.0" y="287.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Signs in to Azure with OIDC,</text>
+<text x="900.0" y="307.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">no stored secrets.</text>
+<rect x="1130" y="205" width="220" height="130" rx="16" fill="#ffffff" stroke="#666666" stroke-width="1.5"/>
+<text x="1240.0" y="267.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Terraform</text>
+<text x="1240.0" y="287.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Builds the Azure side.</text>
+<rect x="1400" y="205" width="160" height="130" rx="16" fill="#ffffff" stroke="#666666" stroke-width="1.5"/>
+<text x="1480.0" y="257.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Ansible</text>
+<text x="1480.0" y="277.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Configures the</text>
+<text x="1480.0" y="297.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">edge nodes.</text>
+<text x="694" y="258" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#555555" text-anchor="start">PR</text>
+<text x="552" y="395" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#555555" text-anchor="start">sign in</text>
+<rect x="40" y="420" width="1720" height="470" rx="16" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+<text x="64" y="470" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#1f3a5f" text-anchor="start" font-weight="bold">AZURE</text>
+<text x="64" y="497.0" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#1f3a5f" text-anchor="start" font-weight="bold">Cloud hub</text>
+<text x="64" y="518.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#555555" text-anchor="start">Norway East</text>
+<text x="64" y="530.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#333333" text-anchor="start"></text>
+<text x="64" y="549.0" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">Holds identity, secrets,</text>
+<text x="64" y="570.25" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">policy and monitoring.</text>
+<text x="64" y="591.5" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">Issues the certificates</text>
+<text x="64" y="612.75" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">the edge depends on.</text>
+<rect x="400" y="470" width="280" height="150" rx="16" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="540.0" y="522.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Microsoft Entra ID</text>
+<text x="540.0" y="542.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Users, groups, RBAC and</text>
+<text x="540.0" y="562.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Conditional Access. Trusts</text>
+<text x="540.0" y="582.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">the issuer for federation.</text>
+<rect x="740" y="470" width="260" height="150" rx="16" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="870.0" y="522.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Microsoft Sentinel</text>
+<text x="870.0" y="542.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Reads Log Analytics and</text>
+<text x="870.0" y="562.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">alerts when a removed</text>
+<text x="870.0" y="582.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">identity is still in use.</text>
+<rect x="1060" y="470" width="360" height="150" rx="16" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="1240.0" y="522.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Azure Policy and Defender</text>
+<text x="1240.0" y="542.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Guardrails on every resource and</text>
+<text x="1240.0" y="562.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">a security posture score for</text>
+<text x="1240.0" y="582.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">the whole subscription.</text>
+<rect x="400" y="690" width="280" height="150" rx="16" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="540.0" y="742.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Certificate issuer</text>
+<text x="540.0" y="762.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">SPIRE server on a small AKS</text>
+<text x="540.0" y="782.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">cluster. Gives every edge service</text>
+<text x="540.0" y="802.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">a short-lived certificate.</text>
+<rect x="740" y="690" width="260" height="150" rx="16" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="870.0" y="742.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Key Vault</text>
+<text x="870.0" y="762.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Secrets and keys the edge</text>
+<text x="870.0" y="782.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">services fetch without</text>
+<text x="870.0" y="802.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">storing any themselves.</text>
+<rect x="1060" y="690" width="360" height="150" rx="16" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="1240.0" y="742.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Hub network</text>
+<text x="1240.0" y="762.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">VNet, NSGs and a small gateway VM</text>
+<text x="1240.0" y="782.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">that ends the WireGuard tunnel</text>
+<text x="1240.0" y="802.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">from the edge site.</text>
+<rect x="1540" y="470" width="200" height="370" rx="16" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5"/>
+<text x="1640.0" y="602.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Monitoring</text>
+<text x="1640.0" y="622.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Prometheus and Grafana</text>
+<text x="1640.0" y="642.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">for metrics, Log Analytics</text>
+<text x="1640.0" y="662.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">for logs.</text>
+<text x="1640.0" y="682.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle"></text>
+<text x="1640.0" y="702.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Budget alerts keep</text>
+<text x="1640.0" y="722.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">the bill visible.</text>
+<text x="552" y="659" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#4a6fa5" text-anchor="start">OIDC trust</text>
+<text x="1620" y="909" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#b85450" text-anchor="end" font-weight="bold">TB1 across the WAN</text>
+<rect x="40" y="950" width="1720" height="180" rx="16" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+<text x="64" y="1000" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#4b2a5c" text-anchor="start" font-weight="bold">WAN</text>
+<text x="64" y="1027.0" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#4b2a5c" text-anchor="start" font-weight="bold">Site-to-cloud link</text>
+<text x="64" y="1048.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#555555" text-anchor="start">Internet, 4G or satellite</text>
+<text x="64" y="1060.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#333333" text-anchor="start"></text>
+<text x="64" y="1079.0" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">Slow, lossy or cut. The thesis</text>
+<text x="64" y="1100.25" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">degrades it on purpose.</text>
+<rect x="1060" y="1000" width="360" height="90" rx="16" fill="#ffffff" stroke="#9673a6" stroke-width="1.5"/>
+<text x="1240.0" y="1042.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">WireGuard tunnel</text>
+<text x="1240.0" y="1062.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Cut and degraded with tc netem.</text>
+<rect x="40" y="1160" width="1720" height="280" rx="16" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+<text x="64" y="1210" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#2d4d1f" text-anchor="start" font-weight="bold">EDGE SITE</text>
+<text x="64" y="1237.0" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#2d4d1f" text-anchor="start" font-weight="bold">Substation, clinic or ship</text>
+<text x="64" y="1258.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#555555" text-anchor="start">K3s on two or more nodes</text>
+<text x="64" y="1270.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#333333" text-anchor="start"></text>
+<text x="64" y="1289.0" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">Runs the local services</text>
+<text x="64" y="1310.25" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">and must keep working</text>
+<text x="64" y="1331.5" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">while the WAN is down.</text>
+<rect x="400" y="1230" width="280" height="150" rx="16" fill="#ffffff" stroke="#82b366" stroke-width="1.5"/>
+<text x="540.0" y="1282.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">SPIRE agent</text>
+<text x="540.0" y="1302.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">One per node. Proves which</text>
+<text x="540.0" y="1322.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">node it runs on and keeps the</text>
+<text x="540.0" y="1342.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">certificates of local services.</text>
+<rect x="740" y="1230" width="260" height="150" rx="16" fill="#ffffff" stroke="#82b366" stroke-width="1.5"/>
+<text x="870.0" y="1282.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Edge services</text>
+<text x="870.0" y="1302.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Small Go services that</text>
+<text x="870.0" y="1322.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">only talk to each other</text>
+<text x="870.0" y="1342.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">over mutual TLS.</text>
+<rect x="1060" y="1230" width="680" height="150" rx="16" fill="#ffffff" stroke="#82b366" stroke-width="1.5"/>
+<text x="1400.0" y="1292.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Nodes</text>
+<text x="1400.0" y="1312.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Hardened Linux, K3s and WireGuard, set up by Ansible.</text>
+<text x="1400.0" y="1332.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">A local issuer on the site is a planned extension.</text>
+<text x="688" y="1292" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#555555" text-anchor="start">certs</text>
+<rect x="40" y="1470" width="1720" height="220" rx="16" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+<text x="64" y="1520" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#5c3d00" text-anchor="start" font-weight="bold">CLIENTS</text>
+<text x="64" y="1547.0" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#5c3d00" text-anchor="start" font-weight="bold">Devices and load</text>
+<text x="64" y="1568.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#555555" text-anchor="start">Same site network</text>
+<text x="64" y="1580.0" font-family="Helvetica, Arial, sans-serif" font-size="8" fill="#333333" text-anchor="start"></text>
+<text x="64" y="1599.0" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">Simulated devices, a load</text>
+<text x="64" y="1620.25" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#333333" text-anchor="start">generator and an attacker.</text>
+<rect x="740" y="1530" width="260" height="120" rx="16" fill="#ffffff" stroke="#d79b00" stroke-width="1.5"/>
+<text x="870.0" y="1577.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Clients and load</text>
+<text x="870.0" y="1597.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Simulated devices and</text>
+<text x="870.0" y="1617.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Fortio as load generator.</text>
+<rect x="1060" y="1530" width="360" height="120" rx="16" fill="#f8cecc" stroke="#b85450" stroke-width="1.5"/>
+<text x="1240.0" y="1577.125" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#222222" text-anchor="middle" font-weight="bold">Attacker</text>
+<text x="1240.0" y="1597.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">Holds a copy of a removed</text>
+<text x="1240.0" y="1617.875" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#333333" text-anchor="middle">service&#x27;s certificate and key.</text>
+<text x="1132" y="1458" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#b85450" text-anchor="start">stolen certificate</text>
+<text x="40" y="1764" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#111111" text-anchor="start" font-weight="bold">The main flows</text>
+<rect x="40" y="1790" width="328" height="150" rx="0" fill="#ffffff" stroke="#bbbbbb" stroke-width="1"/>
+<text x="54" y="1817" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">Provision</text>
+<text x="54" y="1836.25" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">Merging to main runs Terraform</text>
+<text x="54" y="1855.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">for Azure and Ansible for the</text>
+<text x="54" y="1873.75" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">edge nodes. The pipeline gets</text>
+<text x="54" y="1892.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">a short-lived Azure token (OIDC).</text>
+<rect x="388" y="1790" width="328" height="150" rx="0" fill="#ffffff" stroke="#bbbbbb" stroke-width="1"/>
+<text x="402" y="1817" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">Issue</text>
+<text x="402" y="1836.25" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">The SPIRE agent proves which</text>
+<text x="402" y="1855.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">node it is on and fetches</text>
+<text x="402" y="1873.75" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">short-lived certificates from</text>
+<text x="402" y="1892.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">the issuer, across the WAN.</text>
+<rect x="736" y="1790" width="328" height="150" rx="0" fill="#ffffff" stroke="#bbbbbb" stroke-width="1"/>
+<text x="750" y="1817" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">Serve</text>
+<text x="750" y="1836.25" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">Services get their certificates</text>
+<text x="750" y="1855.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">from the local agent and accept</text>
+<text x="750" y="1873.75" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">only requests over mutual TLS.</text>
+<rect x="1084" y="1790" width="328" height="150" rx="0" fill="#ffffff" stroke="#bbbbbb" stroke-width="1"/>
+<text x="1098" y="1817" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">Federate</text>
+<text x="1098" y="1836.25" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">A service swaps its identity for</text>
+<text x="1098" y="1855.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">an Entra token and reads Key</text>
+<text x="1098" y="1873.75" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">Vault. No secret is stored on</text>
+<text x="1098" y="1892.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">the site.</text>
+<rect x="1432" y="1790" width="328" height="150" rx="0" fill="#ffffff" stroke="#bbbbbb" stroke-width="1"/>
+<text x="1446" y="1817" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">Observe</text>
+<text x="1446" y="1836.25" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">Metrics and logs go to Azure.</text>
+<text x="1446" y="1855.0" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">Sentinel raises an alert when</text>
+<text x="1446" y="1873.75" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">the attacker uses a removed</text>
+<text x="1446" y="1892.5" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#333333" text-anchor="start">certificate.</text>
+<polyline points="680,270 740,270" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="1060,270 1130,270" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="1000,205 1000,185 1480,185 1480,205" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="540,335 540,470" fill="none" stroke="#999999" stroke-width="1.5" marker-end="url(#a999999)"/>
+<polyline points="1240,335 1240,470" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="1480,335 1480,1230" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="540,620 540,690" fill="none" stroke="#4a6fa5" stroke-width="1.5" stroke-dasharray="12 7" marker-end="url(#a4a6fa5)" marker-start="url(#s4a6fa5)"/>
+<polyline points="40,920 1760,920" fill="none" stroke="#b85450" stroke-width="2.5" stroke-dasharray="12 7"/>
+<polyline points="1240,840 1240,1000" fill="none" stroke="#999999" stroke-width="1.5"/>
+<polyline points="1240,1090 1240,1230" fill="none" stroke="#999999" stroke-width="1.5"/>
+<polyline points="540,1230 540,840" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)" marker-start="url(#s333333)"/>
+<polyline points="870,1230 870,840" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="1640,1230 1640,840" fill="none" stroke="#82b366" stroke-width="2.5" marker-end="url(#a82b366)"/>
+<polyline points="680,1305 740,1305" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="870,1530 870,1380" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a333333)"/>
+<polyline points="1120,1530 1120,1470 960,1470 960,1380" fill="none" stroke="#b85450" stroke-width="2" stroke-dasharray="12 7" marker-end="url(#ab85450)"/>
+<circle cx="1240" cy="392" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="1240" y="398" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<text x="1266" y="397" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">provision</text>
+<circle cx="1480" cy="392" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="1480" y="398" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<text x="1506" y="397" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">configure</text>
+<circle cx="540" cy="1040" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="540" y="1046" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<text x="566" y="1045" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">attest and renew</text>
+<text x="566" y="1065.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">certificates</text>
+<circle cx="870" cy="1040" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="870" y="1046" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<text x="896" y="1045" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">federated token,</text>
+<text x="896" y="1065.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">no secrets</text>
+<circle cx="1640" cy="1040" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="1640" y="1046" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<text x="1666" y="1045" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">metrics</text>
+<text x="1666" y="1065.0" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">and logs</text>
+<circle cx="870" cy="1500" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="870" y="1506" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<text x="896" y="1505" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#222222" text-anchor="start">requests over mTLS</text>
+<circle cx="342" cy="1816" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="342" y="1822" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<circle cx="690" cy="1816" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="690" y="1822" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<circle cx="1038" cy="1816" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="1038" y="1822" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<circle cx="1386" cy="1816" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="1386" y="1822" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<circle cx="1734" cy="1816" r="17" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+<text x="1734" y="1822" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+</svg>
